@@ -1,0 +1,14 @@
+.infoContainer {
+    width: 92%;
+    display: block;
+    margin: 1rem auto;
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+}
+
+.imageText {
+    text-align: center;
+}

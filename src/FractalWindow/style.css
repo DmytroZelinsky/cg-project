@@ -1,0 +1,56 @@
+body {
+    background-color: #359EFF!important;
+}
+
+#fractalContainer {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 700px;
+    padding: 0;
+}
+canvas {
+    display: block !important;
+}
+
+.modeBtn{
+    display: block;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 2px rgb(75, 73, 73);
+    font: 1.2em "Fira Sans", sans-serif;
+}
+
+.modeBtn:hover{
+    border: 2px solid rgb(167, 161, 161);
+}
+.blackModeBtn {
+    background-color: black;
+}
+
+.whiteModeBtn {
+    background-color: white;
+}
+
+.rainbowModeBtn {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+.backBtn {
+    background-color: #CBDDFF;
+}
+
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+
+.helpBtn {
+    
+}

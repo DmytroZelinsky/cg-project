@@ -1,0 +1,40 @@
+/* body{
+    position: relative;
+} */
+
+.btnContainer{
+    background-color: #3176B6;
+    max-width: 50rem;
+    height: 30rem;
+    margin: 10rem auto;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: stretch;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+
+.btnMain {
+    border:0;
+    border-radius: 0.55rem;
+    height: 27%;
+    background-color: #CBDDFF;
+    margin: 0 3%;
+}
+
+.btnMain:hover, .helpBtn:hover  {
+    transition: all 0.2s;
+    background-color: #9fb9eb;
+}
+
+.helpBtn {
+    position: absolute;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: #CBDDFF;
+    width: 3rem;
+    height: 3rem;
+    top: 1rem;
+    right: 1rem;
+}
+
