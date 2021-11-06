@@ -15,7 +15,6 @@ const Fractal = (props) => {
     const setup = (p5) => {
         p5.createCanvas(width, height).parent('fractalContainer')
         p5.pixelDensity(1)
-        let start = new Date()
         for(let i = 0; i < diameter ; i += 1) {
             for(let j = 0; j < diameter; j += 1) {
                 let z = 0
@@ -33,7 +32,7 @@ const Fractal = (props) => {
                 // if(mandelbrotFunc(0, c).abs > 2) continue
                 let res
                 let colorNum = 0
-                let iterationCount = 15
+                let iterationCount = 25
                 let colorAdder = Math.round(255 / iterationCount)
                 for(let i = 0; i < iterationCount; i++) {
                     res = mandelbrotFunc(z, c)
@@ -51,7 +50,6 @@ const Fractal = (props) => {
                 allPoints.push(point)
             }
         }
-        console.log(new Date() - start)
     }
   //z = z^2 + C
     const mandelbrotFunc = (z, c) => {

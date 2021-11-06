@@ -17,8 +17,8 @@ canvas {
     display: block;
     align-items: center;
     height: 3rem;
-    width: 100%;
-    margin: 1rem 0;
+    width: 90%;
+    margin: 1rem auto;
     border: 0;
     border-radius: 0.5rem;
     box-shadow: 1px 2px 2px rgb(75, 73, 73);
@@ -41,6 +41,13 @@ canvas {
 }
 
 .backBtn {
+    position: absolute;
+    top: 1rem;
+    left: 1 rem;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
     background-color: #CBDDFF;
 }
 
@@ -49,8 +56,4 @@ h1 {
 }
 h4 {
     text-align: center;
-}
-
-.helpBtn {
-    
 }

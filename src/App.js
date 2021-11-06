@@ -11,12 +11,14 @@ import TheoryNav from './Theory/TheoryNav/TheoryNav';
 import FractalTheory from './Theory/FractalTheory/FractalTheory';
 import ColorTheory from './Theory/ColorTheory/ColorTheory';
 import TransformationTheory from './Theory/TransformationTheory/TransformationTheory';
+import ColorWindow from './ColorWindow/ColorWindow';
 function App() {
   return (
   <>
     <Router>
       <Switch>
         <Route exact path='/fractal' component={FractalWindow}/>
+        <Route exact path='/color' component={ColorWindow}/>
         <Route exact path='/home' component={Home}/>
         <Route exact path='/' component={Home}/>
       </Switch>

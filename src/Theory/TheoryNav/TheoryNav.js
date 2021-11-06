@@ -5,11 +5,13 @@ import {
     Switch,
     Route,
     Link,
-    useHistory 
+    useHistory
   } from "react-router-dom";
-import {Col, Row, Container} from 'react-bootstrap'
+import {Col, Row, Container, Image} from 'react-bootstrap'
 import FractalTheory from '../FractalTheory/FractalTheory';
 import './TheoryNav.css'
+import leftarrow from './leftarrow.png'
+
 const TheoryNav = (props) => {
     let history = useHistory();
     useEffect(() => {
@@ -18,8 +20,12 @@ const TheoryNav = (props) => {
     return (
         <>
             <Container fluid>
-                <h1>Теоретичні відомості</h1>
-                <Row>
+                <Row >
+                    <Col lg={12} style={{position:'relative'}}>
+                    <Button className='backBtn' onClick={() => history.push('/')}><Image src={leftarrow} fluid></Image></Button>
+                    <h1 style={{marginTop:'1rem'}}>Теоретичні відомості</h1>
+                    </Col>
+                    
                     <Col md={4}>
                         <Button className='navBtn' onClick={() => history.push('/theory/fractal')}>
                              Фрактали

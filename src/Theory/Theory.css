@@ -12,3 +12,11 @@
 .imageText {
     text-align: center;
 }
+.infoHeader {
+    background-color: red !important;
+}
+
+.accordion-button {
+    background-color: #CBDDFF !important;
+    border: 0 !important;
+}

@@ -6,20 +6,20 @@ import {
     Link
   } from "react-router-dom";
 import { Accordion, Image } from "react-bootstrap";
-import './FractalTheory.css'
-import peano1 from '../FractalTheory/peano1.PNG'
-import kocha1 from '../FractalTheory/kocha1.PNG'
-import kocha2 from '../FractalTheory/kocha2.PNG'
-import formula1 from '../FractalTheory/formula1.PNG'
-import dragon1 from '../FractalTheory/dragon1.PNG'
-import n1 from '../FractalTheory/n1.PNG'
-import mink1 from '../FractalTheory/mink1.PNG'
-import levi1 from '../FractalTheory/levi1.PNG'
-import mand1 from '../FractalTheory/mand1.PNG'
-import mand2 from '../FractalTheory/mand2.PNG'
-import jul1 from '../FractalTheory/jul1.PNG'
-import stoh1 from '../FractalTheory/stoh1.PNG'
-import plasma1 from '../FractalTheory/plasma1.PNG'
+import '../Theory.css'
+import peano1 from '../FractalTheory/pics/peano1.PNG'
+import kocha1 from '../FractalTheory/pics/kocha1.PNG'
+import kocha2 from '../FractalTheory/pics/kocha2.PNG'
+import formula1 from '../FractalTheory/pics/formula1.PNG'
+import dragon1 from '../FractalTheory/pics/dragon1.PNG'
+import n1 from '../FractalTheory/pics/n1.PNG'
+import mink1 from '../FractalTheory/pics/mink1.PNG'
+import levi1 from '../FractalTheory/pics/levi1.PNG'
+import mand1 from '../FractalTheory/pics/mand1.PNG'
+import mand2 from '../FractalTheory/pics/mand2.PNG'
+import jul1 from '../FractalTheory/pics/jul1.PNG'
+import stoh1 from '../FractalTheory/pics/stoh1.PNG'
+import plasma1 from '../FractalTheory/pics/plasma1.PNG'
 
 
 
@@ -29,6 +29,7 @@ const FractalTheory = () => {
      }, [])
     return (
         <>
+            <h1>Фрактали</h1>
             <div className='infoContainer'>
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
@@ -41,8 +42,8 @@ const FractalTheory = () => {
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
-                        <Accordion.Header>ГЕОМЕТРИЧНІ ФРАКТАЛИ</Accordion.Header>
-                        <Accordion.Body>
+                        <Accordion.Header >ГЕОМЕТРИЧНІ ФРАКТАЛИ</Accordion.Header>
+                        <Accordion.Body >
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;Фрактали цього класу найнаочніші. Цей тип фракталів утворюється шляхом простих геометричних побудов. Наприклад, у двомірному випадку їх отримують за допомогою деякої ламаної (або поверхні в тривимірному випадку), званої генератором. За один крок алгоритму кожен з відрізків (складових ламаної) замінюється на ламану-генератор, у відповідному масштабі. У результаті нескінченного повторення цієї процедури, виходить геометричний фрактал.</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;Перші ідеї фрактальної геометрії виникли в ХІХ ст. Кантор за допомогою простої рекурсивної процедури перетворив лінію на набір незв’язаних крапок (так званий Пил Кантора). Він брав лінію і видаляв центральну третину, після цього повторював те ж саме з відрізками.</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;Пеано ж намалював особливий вид лінії Пеано (рис. 1). Для її малювання італійський математик взяв квадрат і видалив у ньому нижню сторону. Утворилась крива Пеано 1-го порядку (рис. 1, а). Далі вчений зменшив квадрат рівно вдвічі, і зробив його 4 копії. Дві з них поставив паралельно одна одній, а інші дві ще повернув на чверть обороту в протилежні сторони та з’єднав кінці ліній квадратів трьома однаковими відрізками, довжиною, що дорівнює стороні нового зменшеного квадрата. Утворилась крива Пеано 2-го порядку (рис. 2, б). Процедура повторюється знову: зменшується крива 2-го порядку вдвічі, робиться чотири її копії, дві з яких повертаються, і знову з’єднуються відрізками, які теж зменшені вдвічі (рис. 1, в–е). Повторювати даний алгоритм можна до нескінченності.</p>
