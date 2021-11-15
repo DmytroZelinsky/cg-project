@@ -16,24 +16,25 @@ canvas {
 .modeBtn{
     display: block;
     align-items: center;
-    height: 3rem;
-    width: 90%;
+    height: 3rem !important;
+    width: 90%  !important;
     margin: 1rem auto;
     border: 0;
     border-radius: 0.5rem;
     box-shadow: 1px 2px 2px rgb(75, 73, 73);
     font: 1.2em "Fira Sans", sans-serif;
+    background-color: #CBDDFF !important;
 }
 
 .modeBtn:hover{
     border: 2px solid rgb(167, 161, 161);
 }
 .blackModeBtn {
-    background-color: black;
+    background-color: black !important;
 }
 
 .whiteModeBtn {
-    background-color: white;
+    background-color: white !important;
 }
 
 .rainbowModeBtn {

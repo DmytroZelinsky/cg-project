@@ -1,0 +1,13 @@
+.transformtaionInput {
+    border: 0;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    background-color: #CBDDFF;
+    text-align: center;
+}
+
+.inputContainer {
+    width: 10rem;
+    margin: 0 auto;
+}

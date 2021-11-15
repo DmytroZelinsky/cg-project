@@ -6,12 +6,13 @@ import {
   Link
 } from "react-router-dom";
 import FractalWindow from './FractalWindow/FractalWindow'
+import ColorWindow from './ColorWindow/ColorWindow';
+import TransformationWindow from './TransformationWindow/TransformationWindow';
 import Home from './Home/Home';
 import TheoryNav from './Theory/TheoryNav/TheoryNav';
 import FractalTheory from './Theory/FractalTheory/FractalTheory';
 import ColorTheory from './Theory/ColorTheory/ColorTheory';
 import TransformationTheory from './Theory/TransformationTheory/TransformationTheory';
-import ColorWindow from './ColorWindow/ColorWindow';
 function App() {
   return (
   <>
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route exact path='/fractal' component={FractalWindow}/>
         <Route exact path='/color' component={ColorWindow}/>
+        <Route exact path='/transformation' component={TransformationWindow}/>
         <Route exact path='/home' component={Home}/>
         <Route exact path='/' component={Home}/>
       </Switch>
