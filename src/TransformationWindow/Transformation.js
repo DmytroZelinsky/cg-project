@@ -85,7 +85,7 @@ const Transformation = (props) => {
         for(let x = -xCount/2; x <= xCount/2; x++) {
             p5.line(x * price, -height/2, x * price, height/2)
             p5.circle(x * price, 0, 3)
-            p5.text(x, x * price + 2)
+            p5.text(x, x * price + 2, 12)
         }
         for(let y = -yCount/2; y <= yCount/2; y++) {
             if(y !== 0) {
