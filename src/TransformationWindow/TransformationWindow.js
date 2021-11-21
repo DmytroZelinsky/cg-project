@@ -91,8 +91,10 @@ const TransformationWindow = () => {
                         </Button>
                         <OverlayTrigger
                             placement='right'
-                            overlay={<Tooltip> Це множина комплексних чисел, які при ітеративному процесі залишаються обмеженими в певному абсолютному значенні. Для масштабу використайте подвійне натискання. </Tooltip>}>
-                            <Button className='helpBtn' onClick={() => history.push('/theory/fractal')}><h2><b>?</b></h2></Button>
+                            overlay={<Tooltip> Афінним називається перетворення, що має такі властивості:
+                                Може бути представлене як послідовність операцій з числа найпростіших: зсув, розтягнення/стиснення, поворот;
+                                Під час перетворень зберігаються прямі лінії, паралельність прямих, відношення довжин відрізків, що лежать на одній прямій, і відношення площ фігур. Перетворення застосовуються автоматично після зміни параметрів. </Tooltip>}>
+                            <Button className='helpBtn' onClick={() => history.push('/theory/transformation')}><h2><b>?</b></h2></Button>
                         </OverlayTrigger>
                         <h1>Афінні перетворення</h1>
                         <h4>Координати вершин квадрата</h4>
@@ -142,7 +144,7 @@ const TransformationWindow = () => {
                             </Col>
                         </Row>
                         <h4>Поворот та рух по вертикалі</h4>
-                        <Form.Range defaultValue={5} min={0} max={20} step={0.25} onChange={(e) => {setXOffset(e.target.value > sliderValue ? 0.2: -0.2); setSliderValue(e.target.value)}}></Form.Range>
+                        <Form.Range defaultValue={5} min={0} max={20} step={0.25} onChange={(e) => {setXOffset(+e.target.value > sliderValue ? 0.2: -0.2); setSliderValue(e.target.value)}}></Form.Range>
                     </Col>
                     <Col lg={8}>
                         <Transformation points={points}></Transformation>
