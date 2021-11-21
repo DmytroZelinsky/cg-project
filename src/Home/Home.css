@@ -6,7 +6,8 @@
     background-color: #3176B6;
     max-width: 50rem;
     height: 30rem;
-    margin: 10rem auto;
+    margin: 0 auto;
+    margin-top: 10rem;
     border-radius: 0.75rem;
     display: flex;
     align-items: stretch;
